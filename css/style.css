@@ -1,0 +1,1351 @@
+@font-face {
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/Arial-ItalicMT.woff2') format('woff2'),
+       url('../fonts/Arial-ItalicMT.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/AnyConv.com__Comfortaa-VariableFont_wght.woff2') format('woff2'),
+       url('../fonts/Comfortaa-VariableFont_wght.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+}
+
+html,
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', 'Arial', serif;
+  font-style: normal;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #FFF;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+img {
+   max-width: 100%;
+}
+
+/*Modal*/
+.modal-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+}
+
+.modal-nav__window {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 400px;
+  width: 100%;
+  background-color: #f2e9e4;
+}
+
+.modal-nav__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 90px 30px;
+}
+
+.modal-nav__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-nav__close svg > circle {
+  transition: stroke .3s ease-in-out;
+}
+
+.modal-nav__close svg > path {
+  transition: stroke .3s ease-in-out;
+}
+
+.modal-nav__close:hover svg circle {
+  stroke: #000;
+}
+
+.modal-nav__close:hover svg path {
+  stroke: #000;
+}
+
+.modal-nav__close:focus svg circle {
+  stroke: #000;
+}
+
+.modal-nav__close:focus svg path {
+  stroke: #000;
+}
+
+.modal-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-nav__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.modal-nav__link {
+  display: flex;
+  font-weight: 300;
+  font-size: 20px;
+  color: #454545;
+  transition: opacity .3s ease-in-out, color .3s ease-in-out;
+}
+
+.modal-nav__link:hover {
+  opacity: .7;
+}
+
+.modal-nav__link:focus {
+  color: #000;
+}
+
+  /*Header*/
+.header {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.header-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 80px;
+  width: 100%;
+  max-height: 80px;
+  height: 100%;
+  margin-bottom: 60px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.header-btn__line {
+  display: flex;
+  width: 80px;
+  height: 3px;
+  margin-bottom: 20px;
+  background-color: #454545;
+}
+
+.header-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-heading {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #454545;
+  font-family: 'Comfortaa';
+  font-weight: 300;
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-date {
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  color: #454545;
+  text-align: center;
+}
+
+.header-text {
+  margin-bottom: 30px;
+  font-family: 'Caveat';
+  font-weight: 400;
+  font-size: 30px;
+  color: #dbaf96;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Wedding*/
+.wedding  {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.background-title {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: 300;
+  font-size: 120px;
+  text-transform: uppercase;
+  color: #dbaf96;
+  opacity: 0.2;
+  transform: translate(-35%, 0);
+}
+
+.wedding-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  margin-bottom: 60px;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 130%;
+  color: #454545;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wedding-block__title {
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.text {
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: left;
+}
+
+.wedding-block__date {
+  margin-bottom: 15px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 50px;
+  color: #dbaf96;
+  border-top: 1px solid #dbaf96;
+  border-bottom: 1px solid #dbaf96;
+}
+
+.wedding-block__greeting {
+  font-weight: 300;
+  font-size: 20px;
+  color: #454545;
+}
+
+.wedding-heart {
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wedding-heart__item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.wedding-heart__img {
+  width: 20px;
+  height: 20px;
+}
+
+.wedding-decor {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+/*Story*/
+.story {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.story-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.story-block__img {
+  max-width: 50%;
+  padding: 20px;
+  border: 1px solid #dbaf96;
+}
+
+.story-block__subtitle {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-weight: 300;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #dbaf96;
+  opacity: 0.2;
+  transform: rotate(-90deg);
+}
+
+.story-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.story-content__paragraph {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+}
+
+.story-content__text {
+  text-align: center;
+}
+
+.story-content__img {
+  max-width: 45%;
+  padding: 20px;
+  border: 1px solid #dbaf96;
+}
+
+.story-content__heading {
+  font-size: 35px;
+}
+
+.story-content__decor {
+  margin: auto;
+  margin-bottom: 60px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+}
+
+/*Moments*/
+.moments {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+.swiper-slide {
+  padding: 20px;
+  border: 1px solid #dbaf96;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #dbaf96;
+  border: 1px solid #dbaf96;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #454545;
+  border-color: #454545;
+}
+
+.btn:focus {
+  background-color: #454545;
+  border-color: #454545;
+  opacity: .7;
+}
+
+.btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.swiper-custom-prev::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.swiper-custom-next::before {
+  content: '';
+  position: absolute;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+/*Programm*/
+.programm {
+  position: relative;
+  padding-bottom: 90px;
+  padding-top: 90px;
+}
+
+.programm-text {
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 130%;
+  color: #454545;
+}
+
+.programm-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.programm-list__item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.programm-list__time {
+  display: block;
+  margin-right: 100px;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 130%;
+  color: #dbaf96;
+}
+
+.programm-list__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.programm-list__heading {
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 130%;
+  color: #454545;
+}
+
+.programm-list__text {
+  max-width: 800px;
+}
+
+.programm-background {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: 300;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #dbaf96;
+  opacity: 0.2;
+}
+
+.appointment {
+  right: -20%;
+}
+
+.registration {
+  left: 0;
+}
+
+.banquet {
+  right: -50%;
+}
+
+.happy-end {
+  left: 0;
+}
+
+/*Dress-code*/
+.dress-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.dress-code__colors {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.dress-code__icon {
+  display: inline-block;
+}
+
+.dress-code__icon:not(:last-child) {
+  margin-right: 30px;
+}
+
+.dress-code__text {
+  text-align: center;
+}
+
+/*Invite*/
+.invite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.invite-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 90px;
+  box-shadow: 0px 0px 20px #454545;
+  transition: transform .3s ease, opacity .3s ease-in-out, visibility .3s ease-in-out;
+}
+
+.invite-block__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.invite-block__item {
+  display: flex;
+  justify-content: center;
+}
+
+.invite-block__img {
+  max-width: 70%;
+}
+
+.invite-block__title {
+  margin-bottom: 90px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #dbaf96;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.invite-block__text {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.invite-block__btn {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 40px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #dbaf96;
+  background-color: transparent;
+  border: 1px solid #dbaf96;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.invite-block__btn:hover {
+  border-color: #454545;
+  color: #454545;
+}
+
+.invite-block__btn:focus {
+  border-color: #dbaf96;
+  background-color: #dbaf96;
+  color: #fff;
+}
+
+.invite-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+}
+
+.invite-modal__window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 650px;
+  width: 100%;
+}
+
+.invite-modal__card {
+  position: relative;
+  max-width: 650px;
+  width: 100%;
+  padding: 60px;
+  background-color: #454545;
+}
+
+.invite-modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.invite-modal__close svg > circle {
+  transition: stroke .3s ease-in-out;
+}
+
+.invite-modal__close svg > path {
+  transition: stroke .3s ease-in-out;
+}
+
+.invite-modal__close:hover svg circle {
+  stroke: #a1a1a1;
+}
+
+.invite-modal__close:hover svg path {
+  stroke: #a1a1a1;
+}
+
+.invite-modal__close:focus svg circle {
+  stroke: #a1a1a1;
+}
+
+.invite-modal__close:focus svg path {
+  stroke: #a1a1a1;
+}
+
+.invite-modal__name {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  color: #454545;
+  background-color: #fff;
+}
+
+.invite-modal__label--name {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.invite-modal__agree {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.invite-modal__title {
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #dbaf96;
+  text-align: center;
+}
+
+.invite-modal__group {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.invite-modal__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.invite-modal__label:hover .invite-modal__custom {
+  border-color: #dbaf96;
+}
+
+.invite-modal__real {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.invite-modal__custom {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  border: 2px solid #454545;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.invite-modal__custom::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%) scale(0);
+  border: 7px solid #dbaf96;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform .3s ease-in-out;
+}
+
+.invite-modal__real:checked + .invite-modal__custom::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.invite-modal__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  color: #dbaf96;
+}
+
+.invite-modal__drinks {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.invite-modal__btn {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 40px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #dbaf96;
+  background-color: transparent;
+  border: 1px solid #dbaf96;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.invite-modal__btn:hover {
+  background-color: #dbaf96;
+  color: #454545;
+}
+
+.invite-modal__btn:focus {
+  background-color: #dbaf96;
+  color: #454545;
+  opacity: .7;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*Help*/
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.help-map {
+  max-width: 600px;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 60px;
+}
+
+.help-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.help-img {
+  max-width: 45%;
+  padding: 20px;
+  border: 1px solid #dbaf96;
+}
+
+.help-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 45%;
+  padding: 20px;
+}
+
+.help-content__text {
+  text-align: center;
+}
+
+.help-content__decor {
+  margin-bottom: 30px;
+}
+
+.help-content__link {
+  display: inline-flex;
+  justify-content: center;
+  color: #454545;
+  font-size: 30px;
+  transition: color .3s ease-in-out, opacity .3s ease-in-out, padding .3s ease-in-out;
+}
+
+.help-content__link:hover {
+  color: #dbaf96;
+}
+
+.help-content__link:focus {
+  color: #dbaf96;
+  opacity: .7;
+}
+
+.help-content__link:active {
+  color: #dbaf96;
+  opacity: 1;
+}
+
+/*1199px*/
+@media (max-width: 1199px) {
+  .container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .header-heading {
+    font-size: 60px;
+  }
+
+  .story-block__subtitle {
+    font-size: 70px;
+  }
+
+  .story-content__decor {
+    margin-bottom: 30px;
+  }
+
+  .help-content__title {
+    font-size: 24px;
+  }
+
+  .help-content__link {
+    font-size: 20px;
+  }
+}
+
+/*991px*/
+@media (max-width: 991px) {
+  .header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .header-btn {
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .header-btn__line {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .header-heading {
+    font-size: 40px;
+  }
+
+  .header-date {
+    font-size: 30px;
+  }
+
+  .wedding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .background-title {
+    font-size: 55px;
+  }
+
+  .wedding-block__date {
+    font-size: 30px;
+  }
+
+  .story {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .story-block__subtitle {
+    max-width: 30%;
+    font-size: 50px;
+  }
+
+  .story-block__img {
+    max-width: 70%;
+  }
+
+  .story-content {
+    flex-direction: column-reverse;
+  }
+
+  .story-content__paragraph {
+    max-width: 100%;
+  }
+
+  .story-content__img {
+    max-width: 70%;
+  }
+
+  .programm {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .programm-background {
+    font-size: 60px;
+  }
+
+  .appointment {
+    top: 10%;
+    right: -30%;
+  }
+
+  .banquet {
+    right: -30%;
+  }
+
+  .dress-code {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .help {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .help-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help-content {
+    max-width: 100%;
+  }
+
+  .help-img {
+    max-width: 65%;
+  }
+}
+
+/*767px*/
+@media (max-width: 767px) {
+  .container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .modal-nav__window {
+    max-width: 250px;
+  }
+
+  .header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .header-btn {
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .header-btn__line {
+    width: 30px;
+    margin-bottom: 7px;
+  }
+
+  .header-heading {
+    font-size: 30px;
+  }
+
+  .header-date {
+    font-size: 24px;
+  }
+
+  .header-text {
+    font-size: 24px;
+  }
+
+  .wedding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .wedding-block__heading {
+    margin-bottom: 30px;
+  }
+
+  .heading {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .wedding-block__date {
+    font-size: 24px;
+  }
+
+  .background-title {
+    font-size: 40px;
+  }
+
+  .story {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .story-block__subtitle {
+    font-size: 35px;
+  }
+
+  .story-content__heading {
+    margin-bottom: 30px;
+  }
+
+  .moments {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .programm {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .programm-text {
+    font-size: 20px;
+  }
+
+  .programm-list__time {
+    margin-right: 50px;
+    font-size: 20px;
+  }
+
+  .programm-list__heading {
+    font-size: 20px;
+  }
+
+  .programm-background {
+    font-size: 45px;
+  }
+
+  .dress-code {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .dress-code__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .invite {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .invite-decor {
+    max-width: 45%;
+  }
+
+  .invite-block {
+    padding: 40px;
+  }
+
+  .invite-block__img {
+    max-width: 50%;
+  }
+
+  .invite-block__list {
+    margin-bottom: 30px;
+  }
+
+  .invite-block__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .invite-block__text {
+    margin-bottom: 30px;
+  }
+
+  .invite-block__btn {
+    font-size: 24px;
+  }
+
+  .invite-modal__window {
+    max-width: 450px;
+  }
+
+  .invite-modal__card {
+    padding: 40px;
+  }
+
+  .invite-modal__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+
+  .invite-modal__group {
+    margin-bottom: 10px;
+  }
+
+  .invite-modal__text {
+    font-size: 18px;
+  }
+
+  .invite-modal__btn {
+    padding: 18px 30px;
+    font-size: 24px;
+  }
+
+  .invite-modal__custom {
+    width: 25px;
+    height: 25px;
+  }
+
+  .help {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/*479px*/
+@media (max-width: 479px) {
+  .container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .header-heading {
+    font-size: 28px;
+  }
+
+  .header-date {
+    font-size: 20px;
+  }
+
+  .header-text {
+    font-size: 20px;
+  }
+
+  .background-title {
+    font-size: 30px;
+    transform: translate(-50%, 0);
+    opacity: .4;
+  }
+
+  .modal-nav__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .wedding-block__date {
+    font-size: 20px;
+  }
+
+  .story-block__subtitle {
+    font-size: 20px;
+    opacity: .4;
+  }
+
+  .story-content__img {
+    max-width: 100%;
+  }
+
+  .programm-list__time {
+    margin-right: 15px;
+  }
+
+  .programm-background {
+    font-size: 30px;
+  }
+
+  .banquet {
+    right: -45%;
+  }
+
+  .dress-code__heading {
+    font-size: 20px;
+  }
+
+  .dress-code__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .dress-code__icon:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .invite {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .invite-block__title {
+    font-size: 20px;
+  }
+
+  .invite-block__btn {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  .invite-modal__window {
+    max-width: 300px;
+  }
+
+  .invite-modal__card {
+    padding: 20px;
+  }
+
+  .invite-modal__title {
+    font-size: 20px;
+  }
+
+  .invite-modal__name {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .invite-modal__btn {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  .invite-modal__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .invite-modal__custom--spec {
+    width: 29px;
+  }
+
+  .help-content__title {
+    font-size: 20px;
+  }
+
+  .help-content__link {
+    font-size: 16px;
+  }
+
+  .help-img {
+    max-width: 100%;
+  }
+}

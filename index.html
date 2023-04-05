@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KirillTanya2023</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/normilize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script defer src="libs/just-validate3.3.3.min.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <div class="modal-nav hidden">
+        <div class="modal-nav__window">
+            <div class="modal-nav__card">
+                <button class="modal-nav__close">
+                    <svg class="modal-nav__icon" width="42" height="42" viewbox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19.5" stroke="#A1A6B4" stroke-width="3"/>
+                        <path d="M29.6777 12L12 29.6777M29.6777 29.6777L12 12" stroke="#A1A6B4" stroke-width="3"/>
+                    </svg>
+                </button>
+                <ul class="modal-nav__list">
+                    <li class="modal-nav__item">
+                        <a href="#wedding" class="modal-nav__link">
+                            Мы женимся
+                        </a>
+                    </li>
+                    <li class="modal-nav__item">
+                        <a href="#story" class="modal-nav__link">
+                            Love Story
+                        </a>
+                    </li>
+                    <li class="modal-nav__item">
+                        <a href="#moments" class="modal-nav__link">
+                            Мы
+                        </a>
+                    </li>
+                    <li class="modal-nav__item">
+                        <a href="#guests" class="modal-nav__link">
+                            Наши Гости
+                        </a>
+                    </li>
+                    <li class="modal-nav__item">
+                        <a href="#programm" class="modal-nav__link">
+                            Программа дня
+                        </a>
+                    </li>
+                    <li class="modal-nav__item">
+                        <a href="#dress-code" class="modal-nav__link">
+                            Dress-code
+                        </a>
+                    </li>
+                    <li class="modal-nav__item">
+                        <a href="#invite" class="modal-nav__link">
+                            Приглашение
+                        </a>
+                    </li>
+                    <li class="modal-nav__item">
+                        <a href="#help" class="modal-nav__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <section class="header-block container">
+            <button class="header-btn">
+                <span class="header-btn__line"></span>
+                <span class="header-btn__line"></span>
+                <span class="header-btn__line"></span>
+            </button>
+            <h1 class="header-heading">
+                Таня & Кирилл
+            </h1>
+            <p class="header-date">
+                20.06.2023
+            </p>
+            <p class="header-text">
+                Приглашение на свадьбу
+            </p>
+        </section>
+        <img class="header-img" src="img/header.webp" alt="Фото пары">
+    </header>
+
+    <main>
+        <section id="wedding" class="wedding container">
+            <p class="background-title">
+                мы женимся
+            </p>
+            <div class="wedding-block">
+                <h2 class="wedding-block__heading heading">
+                    мы женимся
+                </h2>
+                <p class="wedding-block__title">
+                    Дорогие друзья, родные и близкие!
+                </p>
+                <p class="wedding-block__subtitle text">
+                    Мы счастливы пригласить вас на нашу свадьбу. Для нас очень важно, чтобы вы смогли разделить с нами самое счастливое мгновение в нашей жизни. Порадуйте нас своим присутствием:
+                </p>
+                <p class="wedding-block__date">
+                    20.06.2023
+                </p>
+                <ul class="wedding-heart">
+                    <li class="wedding-heart__item">
+                        <img class="wedding-heart__img" src="img/decor-heart.png" alt="Сердечко">
+                    </li>
+                    <li class="wedding-heart__item">
+                        <img class="wedding-heart__img" src="img/decor-heart.png" alt="Сердечко">
+                    </li>
+                    <li class="wedding-heart__item">
+                        <img class="wedding-heart__img" src="img/decor-heart.png" alt="Сердечко">
+                    </li>
+                </ul>
+                <p class="wedding-block__greeting">
+                    С любовью, Таня&nbsp;и&nbsp;Кирилл
+                </p>
+            </div>
+        </section>
+
+        <section id="story" class="story container">
+            <div class="story-block">
+                <span class="story-block__subtitle">
+                    love&nbsp;story
+                </span>
+                <img class="story-block__img" src="img/story-1.webp" alt="фото молодых">
+            </div>
+            <article class="story-content">
+                <img class="story-content__img" src="img/story-2.webp" alt="фото молодых">
+                <div class="story-content__paragraph">
+                    <img class="story-content__decor" src="img/gold-headrt.png" alt="Золотое сердце">
+                    <h2 class="story-content__heading heading">
+                        ИСТОРИЯ НАШЕЙ ЛЮБВИ…
+                    </h2>
+                    <p class="story-content__text text">
+                        Это был теплый летний вечер, Кирилл возомнил себя спортсменом и вышел на пробежку, а Таня в тот момент занималась своим любимым делом, болтала по телефону с подружкой, сидя на лавочке.
+                        И вот Кирилл пробегает мимо Тани, искра буря безумие и………….пробегает мимо!
+                        Второй круг, он снова пробегает…
+                        На третий круг, Таня отчаялась и пошла за ним сама, не прекращая болтовню по телефону.
+                        Но в итоге Кирилл подбежал к ней и сказал: «может потом поболтаешь с подругой»,
+                        Таня положила трубку и у них началась любовь!
+                        <br>
+                        P.S.&nbsp;Кирилл больше не бегает.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section id="moments" class="moments container">
+            <p class="background-title">
+                Gallery
+            </p>
+            <h2 class="heading">
+                НАШИ САМЫЕ СЧАСТЛИВЫЕ МОМЕНТЫ
+            </h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="img/slide-1.webp" alt="фото молодых">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="img/slide-2.webp" alt="фото молодых">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="img/slide-3.webp" alt="фото молодых">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="img/slide-4.webp" alt="фото молодых">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-img" src="img/slide-5.webp" alt="фото молодых">
+                  </div>
+                </div>
+                <div class="btns">
+                    <button class="swiper-custom-prev btn"></button>
+                    <button class="swiper-custom-next btn"></button>
+                </div>
+              </div>
+        </section>
+
+        <section id="programm" class="programm container">
+            <p class="background-title">
+                programm
+            </p>
+            <h2 class="heading">
+                программа мероприятия
+            </h2>
+            <p class="programm-text">
+              20 июня 2023
+            </p>
+            <ul class="programm-list">
+              <li class="programm-list__item">
+                <span class="programm-background appointment">
+                  appointment
+                </span>
+                <span class="programm-list__time">
+                  14:00
+                </span>
+                <div class="programm-list__block">
+                  <h3 class="programm-list__heading">
+                    Сбор гостей и фуршет
+                  </h3>
+                  <p class="programm-list__text text">
+                    Пока гости собираются, вы сможете угоститься бокалом игристого и познакомиться с нашим замечательным ведущим.
+                  </p>
+                </div>
+              </li>
+              <li class="programm-list__item">
+                <span class="programm-list__time">
+                  15:00
+                </span>
+                <div class="programm-list__block">
+                  <h3 class="programm-list__heading">
+                    Церемония бракосочетания
+                  </h3>
+                  <p class="programm-list__text text">
+                    Церемония - это трогательный и красивый этап нашего праздника. В кругу близких людей мы скажем друг другу по-настоящему важные слова.
+                  </p>
+                </div>
+                <span class="programm-background registration">
+                  wedding
+                </span>
+              </li>
+              <li class="programm-list__item">
+                <span class="programm-background banquet">
+                  banquet
+                </span>
+                <span class="programm-list__time">
+                  16:00
+                </span>
+                <div class="programm-list__block">
+                  <h3 class="programm-list__heading">
+                    Свадебный ужин
+                  </h3>
+                  <p class="programm-list__text text">
+                    Время вкусной еды, развлечений, тёплого общения и танцев.
+                  </p>
+                </div>
+              </li>
+              <li class="programm-list__item">
+                <span class="programm-list__time">
+                  22:30
+                </span>
+                <div class="programm-list__block">
+                  <h3 class="programm-list__heading">
+                    Окончание вечера
+                  </h3>
+                  <p class="programm-list__text text">
+                    Не хочется этого признавать, но даже такой прекрасный вечер может закончиться.
+                  </p>
+                </div>
+                <span class="programm-background happy-end">
+                  Happy end
+                </span>
+              </li>
+            </ul>
+
+
+
+
+
+        </section>
+
+        <section id="dress-code" class="dress-code container">
+            <h2 class="dress-code__heading heading">
+                НАМ БУДЕТ ПРИЯТНО, ЕСЛИ ВЫ ПОДДЕРЖИТЕ СТИЛИСТИКУ НАШЕЙ СВАДЬБЫ, И ПРЕДПОЧТЁТЕ НАРЯДЫ В СЛЕДУЮЩЕЙ ЦВЕТОВОЙ ГАММЕ:
+            </h2>
+            <div class="dress-code__colors">
+                <svg class="dress-code__icon" width="100" height="100" viewbox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="19.5" stroke="#fff8dc" fill="#fff8dc" stroke-width="3"/>
+                </svg>
+                <svg class="dress-code__icon" width="100" height="100" viewbox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="19.5" stroke="#ffdead" fill="#ffdead" stroke-width="3"/>
+                </svg>
+                <svg class="dress-code__icon" width="100" height="100" viewbox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="19.5" stroke="#000" fill="#000" stroke-width="3"/>
+                </svg>
+                <svg class="dress-code__icon" width="100" height="100" viewbox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="19.5" stroke="#6b8e23" fill="#6b8e23" stroke-width="3"/>
+                </svg>
+            </div>
+            <p class="dress-code__text text">
+                Пожалуйста, не дарите цветы, мы не успеем насладиться их красотой до отъезда. Будем рады получить от вас вашу любимую бутылку: вина, виски, коньяка или мартини.
+            </p>
+        </section>
+
+        <section id="invite" class="invite">
+            <img class="invite-decor" src="img/decor.webp" alt="Декоративная завитушка">
+            <div class="invite-modal hidden">
+                <div class="invite-modal__window ">
+                    <div class="invite-modal__card">
+                        <button class="invite-modal__close">
+                            <svg class="invite-modal__icon" width="42" height="42" viewbox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="21" cy="21" r="19.5" stroke="#dbaf96" stroke-width="3"/>
+                                <path d="M29.6777 12L12 29.6777M29.6777 29.6777L12 12" stroke="#dbaf96" stroke-width="3"/>
+                            </svg>
+                        </button>
+                        <form class="form" action="#" method="post">
+                            <h3 class="invite-modal__title">
+                                Введите ваше имя
+                            </h3>
+                            <label class="invite-modal__label--name">
+                                <input class="invite-modal__name" type="text" name="Имя" placeholder="Имя Фамилия" required>
+                            </label>
+                            <h3 class="invite-modal__title">
+                                Подтвердите присутствие
+                            </h3>
+                            <fieldset class="invite-modal__agree">
+                                <div class="invite-modal__group">
+                                    <label class="invite-modal__label">
+                                        <input class="invite-modal__real" type="radio" name="Присутствие" value="Буду" checked>
+                                        <span class="invite-modal__custom"></span>
+                                        <span class="invite-modal__text">Я приду</span>
+                                    </label>
+                                </div>
+                                <div class="invite-modal__group">
+                                    <label class="invite-modal__label">
+                                        <input class="invite-modal__real" type="radio" name="Присутствие" value="Не знаю">
+                                        <span class="invite-modal__custom invite-modal__custom--spec"></span>
+                                        <span class="invite-modal__text">Затрудняюсь ответить</span>
+                                    </label>
+                                </div>
+                                <div class="invite-modal__group">
+                                    <label class="invite-modal__label">
+                                        <input class="invite-modal__real" type="radio" name="Присутствие" value="Не буду">
+                                        <span class="invite-modal__custom"></span>
+                                        <span class="invite-modal__text">Я не приду</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <h3 class="invite-modal__title">
+                                Выберите предпочтительный напиток
+                            </h3>
+                            <fieldset class="invite-modal__drinks">
+                                <div class="invite-modal__group">
+                                    <label class="invite-modal__label">
+                                        <input class="invite-modal__real" type="radio" name="Напиток" value="Виски" checked>
+                                        <span class="invite-modal__custom"></span>
+                                        <span class="invite-modal__text">Виски</span>
+                                    </label>
+                                </div>
+                                <div class="invite-modal__group">
+                                    <label class="invite-modal__label">
+                                        <input class="invite-modal__real" type="radio" name="Напиток" value="Водка">
+                                        <span class="invite-modal__custom"></span>
+                                        <span class="invite-modal__text">Водка</span>
+                                    </label>
+                                </div>
+                                <div class="invite-modal__group">
+                                    <label class="invite-modal__label">
+                                        <input class="invite-modal__real" type="radio" name="Напиток" value="Коньяк">
+                                        <span class="invite-modal__custom"></span>
+                                        <span class="invite-modal__text">Коньяк</span>
+                                    </label>
+                                </div>
+                                <div class="invite-modal__group">
+                                    <label class="invite-modal__label">
+                                        <input class="invite-modal__real" type="radio" name="Напиток" value="Мартини">
+                                        <span class="invite-modal__custom"></span>
+                                        <span class="invite-modal__text">Мартини</span>
+                                    </label>
+                                </div>
+                                <div class="invite-modal__group">
+                                    <label class="invite-modal__label">
+                                        <input class="invite-modal__real" type="radio" name="Напиток" value="Безалкогольные напитки">
+                                        <span class="invite-modal__custom invite-modal__custom--spec"></span>
+                                        <span class="invite-modal__text">Безалкогольные напитки</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <button class="invite-modal__btn" type="submit">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+               </div>
+            </div>
+            <div class="invite-container container">
+                <div class="invite-block">
+                    <article class="invite-block__content">
+                        <ul class="invite-block__list">
+                            <li class="invite-block__item">
+                                <img class="invite-block__img" src="img/decor-background.png" alt="2 Сердца">
+                            </li>
+                            <li class="invite-block__item">
+                                <img class="invite-block__img" src="img/decor-background.png" alt="2 Сердца">
+                            </li>
+                            <li class="invite-block__item">
+                                <img class="invite-block__img" src="img/decor-background.png" alt="2 Сердца">
+                            </li>
+                        </ul>
+                        <h3 class="invite-block__title">
+                            Ответ на приглашение
+                        </h3>
+                        <p class="invite-block__text text">
+                            Пожалуйста, подтвердите своё присутствие на торжестве. Ваши ответы очень помогут нам в организации свадьбы.
+                        </p>
+                        <p class="invite-block__text text">
+                            Обратите внимание, что если вы идёте парой или семьёй, то нужно заполнить форму на каждого взрослого.
+                        </p>
+                        <button class="invite-block__btn">
+                            Ответить
+                        </button>
+                    </article>
+                </div>
+            </div>
+            <img class="invite-decor" src="img/decor.webp" alt="Декоративная завитушка">
+        </section>
+
+        <section id="help" class="help container">
+            <h2 class="help-map__title heading">
+                Место проведения свадьбы
+            </h2>
+            <p class="help-content__text text">
+              Свою свадьбу мы решили отметить в Доме у Озера. Он находится по адресу: ул. Горького, 36, село Алабушево.
+            </p>
+            <div id="map" class="help-map"></div>
+            <div class="help-block">
+                <img class="help-img" src="img/help-img.webp" alt="Совместное фото молодожёнов">
+                <article class="help-content">
+                    <h2 class="help-content__title heading">
+                        МЫ ВАС ОЧЕНЬ ЖДЁМ И БУДЕМ СЧАСТЛИВЫ ВИДЕТЬ НА НАШЕЙ СВАДЬБЕ!
+                    </h2>
+                    <p class="help-content__text text">
+                        И надеемся, что этот волшебный день надолго останется у вас в памяти.
+                    </p>
+                    <img class="help-content__decor" src="img/gold-headrt.png" alt="Декоративное сердце">
+                    <p class="help-content__text text">
+                        Если будут вопросы, позвоните нам
+                    </p>
+                    <a class="help-content__link text" href="tel:+79154938400">
+                        <span>Татьяна: +7(915) 493-84-00</span>
+                    </a>
+                    <a class="help-content__link text" href="tel:+79774152984">
+                        <span>Кирилл: +7(977) 415-29-84</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
